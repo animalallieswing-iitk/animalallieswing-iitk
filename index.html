@@ -1,68 +1,209 @@
 <!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Critters Chronicle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" class="logo" alt="Campus Critters Chronicle Logo" />
+    <h1>Campus Critters Chronicle</h1>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <div class="grid">
+    <a class="card" href="post1.html">
+      <img src="images/rescue1.jpg" alt="Rescue Story 1" />
+      <div class="card-title">The Kitten by the Canteen</div>
+    </a>
+
+    <a class="card" href="post2.html">
+      <img src="images/rescue2.jpg" alt="Rescue Story 2" />
+      <div class="card-title">A Pup in the Parking Lot</div>
+    </a>
+
+    <a class="card" href="post3.html">
+      <img src="images/rescue3.jpg" alt="Rescue Story 3" />
+      <div class="card-title">The Injured Crow</div>
+    </a>
+  </div>
+
+  <footer>
+    © 2025 Campus Critters Chronicle — Compassion on Campus
+  </footer>
+</body>
+</html>
+
+
+<!-- post1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Kitten by the Canteen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" class="logo" />
+    <h1>Campus Critters Chronicle</h1>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <div class="post-container">
+    <h2>The Kitten by the Canteen</h2>
+    <p>A tiny mewing sound echoed from behind the canteen dumpsters... (add your story here)</p>
+    <img src="images/kitten_story.jpg" />
+    <video controls src="videos/kitten_rescue.mp4"></video>
+    <a class="back-link" href="index.html">← Back to Home</a>
+  </div>
+
+  <footer>© 2025 Campus Critters Chronicle</footer>
+</body>
+</html>
+
+
+<!-- post2.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Pup in the Parking Lot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" class="logo" />
+    <h1>Campus Critters Chronicle</h1>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <div class="post-container">
+    <h2>A Pup in the Parking Lot</h2>
+    <p>During a rainy evening, a scared little pup was spotted under a scooter... (add details)</p>
+    <img src="images/pup_story.jpg" />
+    <video controls src="videos/pup_rescue.mp4"></video>
+    <a class="back-link" href="index.html">← Back to Home</a>
+  </div>
+
+  <footer>© 2025 Campus Critters Chronicle</footer>
+</body>
+</html>
+
+
+<!-- post3.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Injured Crow</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" class="logo" />
+    <h1>Campus Critters Chronicle</h1>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <div class="post-container">
+    <h2>The Injured Crow</h2>
+    <p>Students noticed a crow struggling to fly near the library steps... (write the full story)</p>
+    <img src="images/crow_story.jpg" />
+    <video controls src="videos/crow_rescue.mp4"></video>
+    <a class="back-link" href="index.html">← Back to Home</a>
+  </div>
+
+  <footer>© 2025 Campus Critters Chronicle</footer>
+</body>
+</html>
+
+
+<!-- style.css -->
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  color: #333;
+}
 header {
-background: #2a5d3f;
-color: white;
-padding: 1.5rem;
-text-align: center;
+  background: #2a5d3f;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
 }
 header .logo {
-width: 80px;
-display: block;
-margin: auto;
-margin-bottom: 0.5rem;
+  width: 80px;
+  display: block;
+  margin: auto;
+  margin-bottom: 0.5rem;
 }
 nav a {
-color: #e2f5e9;
-margin: 0 10px;
-text-decoration: none;
-font-weight: bold;
+  color: #e2f5e9;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
 }
 .grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-gap: 1.5rem;
-padding: 2rem;
-max-width: 1200px;
-margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
 }
 .card {
-background: white;
-border-radius: 10px;
-overflow: hidden;
-box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-transition: transform 0.2s;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
 }
 .card:hover {
-transform: scale(1.03);
+  transform: scale(1.03);
 }
 .card img {
-width: 100%;
-height: 200px;
-object-fit: cover;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 .card-title {
-padding: 1rem;
-font-size: 1.3rem;
-font-weight: bold;
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 .post-container {
-max-width: 800px;
-margin: auto;
-padding: 2rem;
-background: white;
-border-radius: 10px;
-margin-top: 2rem;
-box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  margin-top: 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 .post-container img, .post-container video {
-width: 100%;
-border-radius: 10px;
-margin: 1rem 0;
+  width: 100%;
+  border-radius: 10px;
+  margin: 1rem 0;
 }
 footer {
-text-align: center;
-padding: 1rem;
-margin-top: 2rem;
-background: #1f422f;
-color: white;
-}
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  background: #1f422f;
+  color: white;
+} 
